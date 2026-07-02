@@ -14,6 +14,7 @@
 <meta property="og:site_name" content="AutoSecure">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#070B08">
+<meta name="robots" content="index, follow, max-image-preview:large">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,11 +28,13 @@
   "url": "https://autosecurett.com",
   "description": "GPS tracking, anti-hijack systems, home and business security installation across Trinidad and Tobago with 24/7 support.",
   "telephone": "+1-868-295-0703",
+  "email": "autosecurett@gmail.com",
   "priceRange": "TT$1,000 - TT$2,200",
   "currenciesAccepted": "TTD",
   "address": {
     "@type": "PostalAddress",
-    "addressLocality": "San Fernando",
+    "streetAddress": "123 Eastern Main Road",
+    "addressLocality": "San Juan",
     "addressRegion": "Trinidad",
     "addressCountry": "TT"
   },
@@ -342,6 +345,8 @@ h2{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:700;margin-bottom:1.1rem;lette
 .check{display:flex;gap:.6rem;align-items:flex-start;font-size:.76rem;color:var(--muted);margin:.9rem 0 1.1rem}
 .check input{width:auto;min-height:0;margin-top:.25rem;accent-color:var(--green)}
 .form-ok{display:none;background:rgba(53,185,74,.14);border:1px solid rgba(53,185,74,.5);color:#9FE6AC;border-radius:10px;padding:.85rem 1rem;font-size:.86rem;margin-bottom:1rem}
+/* honeypot: pushed off-screen so humans never see it, but present in DOM for bots */
+.hp-field{position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden;opacity:0}
 .wa-btn{background:#1FAE54;color:#04120a}
 .wa-btn:hover{background:#27C462;transform:translateY(-2px)}
 @media(max-width:940px){.cta-banner{grid-template-columns:1fr}}
@@ -416,7 +421,7 @@ footer a:hover{color:var(--lime)}
       <p class="sub">AutoSecure installs professional-grade <strong>GPS tracking</strong> and <strong>anti-hijack systems</strong> for Trinidad &amp; Tobago — backed by real humans on a support line that never closes. Because a stolen vehicle can't wait until Monday morning.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="#cta">Get Protected</a>
-        <a class="btn btn-outline" href="tel:+18685550123">Call 24/7 — (868) 295-0703</a>
+        <a class="btn btn-outline" href="tel:+18682950703">Call 24/7 — (868) 295-0703</a>
       </div>
 
       <div class="consult reveal">
@@ -425,7 +430,7 @@ footer a:hover{color:var(--lime)}
           <b>Not sure which system fits?</b>
           <span>Talk it through with a technician — zero pressure.</span>
         </div>
-        <a class="btn btn-primary" href="https://wa.me/18685550123" style="min-height:52px">Book a Call</a>
+        <a class="btn btn-primary" href="https://wa.me/18682950703" style="min-height:52px">Book a Call</a>
       </div>
     </div>
   </div>
@@ -647,13 +652,18 @@ footer a:hover{color:var(--lime)}
         <h2>Secure it.<br>With AutoSecure.</h2>
         <p>Send your details and a member of our team — not a bot — calls you back within the hour. Prefer to talk now? The line never closes.</p>
         <div class="btns">
-          <a class="btn btn-dark" href="tel:+18685550123">📞 Call 24/7</a>
-          <a class="btn btn-dark" href="https://wa.me/18685550123">WhatsApp Us</a>
+          <a class="btn btn-dark" href="tel:+18682950703">📞 Call 24/7</a>
+          <a class="btn btn-dark" href="https://wa.me/18682950703">WhatsApp Us</a>
         </div>
       </div>
 
       <form id="bookform" novalidate class="cta-form">
         <div class="form-ok" id="formok" role="status">✅ Request received — expect our call shortly. Want an instant reply? Tap "Send via WhatsApp".</div>
+        <!-- honeypot: invisible to humans, irresistible to bots -->
+        <div class="hp-field" aria-hidden="true">
+          <label for="f-company">Company website</label>
+          <input id="f-company" name="company_website" type="text" tabindex="-1" autocomplete="off">
+        </div>
         <div class="field">
           <label for="f-name">Full name</label>
           <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Keisha Mohammed">
@@ -701,7 +711,7 @@ footer a:hover{color:var(--lime)}
         <div class="socials">
           <a href="#" aria-label="AutoSecure on Facebook">f</a>
           <a href="#" aria-label="AutoSecure on Instagram">◎</a>
-          <a href="https://wa.me/18685550123" aria-label="AutoSecure on WhatsApp">✆</a>
+          <a href="https://wa.me/18682950703" aria-label="AutoSecure on WhatsApp">✆</a>
         </div>
       </div>
       <div>
@@ -743,12 +753,12 @@ footer a:hover{color:var(--lime)}
     </div>
     <div class="foot-bottom">
       <span>© 2026 AutoSecure. All rights reserved. Proudly serving Trinidad &amp; Tobago 🇹🇹</span>
-      <span>Support desk · 24/7 · <a href="tel:+18685550123">(868) 295-0703</a></span>
+      <span>Support desk · 24/7 · <a href="tel:+18682950703">(868) 295-0703</a> · <a href="mailto:autosecurett@gmail.com">autosecurett@gmail.com</a></span>
     </div>
   </div>
 </footer>
 
-<a class="float-call" href="tel:+18685550123" aria-label="Call AutoSecure now, available 24/7">
+<a class="float-call" href="tel:+18682950703" aria-label="Call AutoSecure now, available 24/7">
   <span class="pulse" aria-hidden="true"></span> Call 24/7
 </a>
 
@@ -813,9 +823,25 @@ document.querySelectorAll('.svc').forEach(function(card){
   nums.forEach(function(el){io.observe(el)});
 })();
 
-/* booking form — static hosting, WhatsApp handoff */
-var WHATSAPP_NUMBER='18685550123'; /* replace with real number, digits only */
-
+/* booking form — static hosting, WhatsApp handoff
+   Bot defence (frictionless, zero user burden):
+   1. Honeypot   — hidden "company_website" field; humans never see it, bots auto-fill it
+   2. Time trap  — humans need >4s from page load to complete a form; bots submit instantly
+   3. Interaction check — requires at least one real pointer/keyboard event before accepting
+   Bots that fail any check get a fake success (no signal to adapt), and WhatsApp never opens. */
+var WHATSAPP_NUMBER='18682950703';
+var PAGE_LOADED=Date.now();
+var HUMAN=false;
+['pointerdown','keydown','touchstart'].forEach(function(ev){
+  window.addEventListener(ev,function(){HUMAN=true;},{once:true,passive:true});
+});
+function isBot(){
+  var hp=document.getElementById('f-company');
+  if(hp&&hp.value!=='')return true;              /* honeypot filled */
+  if(Date.now()-PAGE_LOADED<4000)return true;    /* superhuman speed */
+  if(!HUMAN)return true;                          /* no real interaction */
+  return false;
+}
 function buildMessage(){
   var f=document.getElementById('bookform');
   return 'New AutoSecure booking request:%0A'
@@ -828,12 +854,14 @@ document.getElementById('bookform').addEventListener('submit',function(e){
   e.preventDefault();
   if(!this.checkValidity()){this.reportValidity();return;}
   var ok=document.getElementById('formok');
-  ok.style.display='block';
+  ok.style.display='block';                       /* bots see "success" too — but nothing is sent */
+  if(isBot())return;
   ok.scrollIntoView({behavior:'smooth',block:'center'});
 });
 document.getElementById('wabtn').addEventListener('click',function(){
   var f=document.getElementById('bookform');
   if(!f.checkValidity()){f.reportValidity();return;}
+  if(isBot())return;                              /* silent drop */
   window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+buildMessage(),'_blank','noopener');
 });
 </script>
