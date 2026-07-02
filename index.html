@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AutoSecure | GPS Tracking &amp; Anti-Hijack Installation Trinidad</title>
+<meta name="description" content="Professional GPS tracking and anti-hijack installation in Trinidad & Tobago with 24/7 human support. One-time pricing, same-day install. Book today.">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://autosecurett.com/">
+<meta property="og:title" content="AutoSecure | GPS Tracking &amp; Anti-Hijack Installation Trinidad">
+<meta property="og:description" content="Tracked. Protected. Recovered. GPS and anti-hijack systems with 24/7 support across Trinidad & Tobago.">
+<meta property="og:locale" content="en_TT">
+<meta property="og:site_name" content="AutoSecure">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070B08">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "AutoSecure",
+  "url": "https://autosecurett.com",
+  "description": "GPS tracking, anti-hijack systems, home and business security installation across Trinidad and Tobago with 24/7 support.",
+  "telephone": "+1-868-555-0123",
+  "priceRange": "TT$1,000 - TT$2,200",
+  "currenciesAccepted": "TTD",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Eastern Main Road",
+    "addressLocality": "San Juan",
+    "addressRegion": "Trinidad",
+    "addressCountry": "TT"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 10.65, "longitude": -61.45 },
+  "openingHours": "Mo-Su 00:00-23:59",
+  "areaServed": "Trinidad and Tobago",
+  "makesOffer": [
+    { "@type": "Offer", "name": "GPS Tracking Installation", "price": "1500", "priceCurrency": "TTD" },
+    { "@type": "Offer", "name": "Anti-Hijacking System Installation", "price": "1000", "priceCurrency": "TTD" },
+    { "@type": "Offer", "name": "Total Protection Bundle", "price": "2200", "priceCurrency": "TTD" }
+  ]
+}
+</script>
+
+<style>
+/* ================= TOKENS ================= */
+:root{
+  --bg:#070B08;
+  --surface:#0C110D;
+  --card:#10170F;
+  --lime:#C7E45F;
+  --green:#35B94A;
+  --text:#F2F6EF;
+  --muted:#96A296;
+  --faint:#5E6A5E;
+  --line:rgba(199,228,95,.12);
+  --grad:linear-gradient(115deg,var(--lime),var(--green));
+  --r-lg:26px;--r-md:18px;--r-sm:12px;
+  --ease:cubic-bezier(.22,.9,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);
+  line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;line-height:1.04;letter-spacing:-.025em}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1180px,92%);margin-inline:auto}
+::selection{background:var(--green);color:#04120a}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+.skip{position:absolute;left:-999px;top:0;background:var(--lime);color:#04120a;padding:.7rem 1.2rem;z-index:10000;font-weight:600}
+.skip:focus{left:0;top:0}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--lime);outline-offset:3px;border-radius:4px}
+.gt{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  min-height:56px;padding:0 1.9rem;border-radius:999px;text-decoration:none;
+  font-weight:600;font-size:1rem;border:none;cursor:pointer;font-family:'Inter',sans-serif;
+  transition:transform .25s var(--ease),box-shadow .25s,background .25s,border-color .25s;
+}
+.btn-primary{background:var(--grad);color:#04120a;box-shadow:0 14px 34px -12px rgba(94,201,84,.55)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 44px -12px rgba(94,201,84,.7)}
+.btn-outline{background:transparent;color:var(--text);border:1px solid rgba(242,246,239,.22)}
+.btn-outline:hover{border-color:var(--lime);color:var(--lime)}
+.btn-dark{background:#04120a;color:var(--lime);border:1px solid rgba(4,18,10,.4)}
+.btn-dark:hover{transform:translateY(-3px)}
+
+/* ================= NAV (minimal, Targo-style) ================= */
+header{
+  position:fixed;inset:0 0 auto;z-index:100;
+  background:rgba(7,11,8,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+nav{display:flex;align-items:center;justify-content:space-between;padding:.9rem 0}
+.logo{
+  display:flex;align-items:center;gap:.55rem;text-decoration:none;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.18rem;
+}
+.logo .mark{
+  width:34px;height:34px;border-radius:10px;background:var(--grad);
+  display:grid;place-items:center;color:#04120a;font-size:1rem;
+  box-shadow:0 0 20px rgba(94,201,84,.4);
+}
+.logo em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-cta{
+  display:inline-flex;align-items:center;min-height:46px;padding:0 1.4rem;border-radius:999px;
+  background:rgba(199,228,95,.09);border:1px solid var(--line);color:var(--text);
+  text-decoration:none;font-weight:600;font-size:.92rem;transition:background .25s,border-color .25s,transform .25s var(--ease);
+}
+.nav-cta:hover{border-color:var(--lime);color:var(--lime);transform:translateY(-2px)}
+
+/* ================= HERO (oversized display + floating consult card) ================= */
+.hero{position:relative;padding:9.5rem 0 3rem;isolation:isolate;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;width:70vw;height:70vw;max-width:900px;max-height:900px;
+  left:50%;top:-38vw;transform:translateX(-50%);border-radius:50%;filter:blur(110px);z-index:-2;
+  background:radial-gradient(circle,rgba(53,185,74,.2),transparent 65%);
+  animation:heropulse 12s ease-in-out infinite alternate;
+}
+@keyframes heropulse{from{opacity:.7;transform:translateX(-50%) scale(1)}to{opacity:1;transform:translateX(-50%) scale(1.1)}}
+.hero .gridbg{
+  position:absolute;inset:0;z-index:-3;opacity:.45;pointer-events:none;
+  background-image:linear-gradient(rgba(199,228,95,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(199,228,95,.05) 1px,transparent 1px);
+  background-size:60px 60px;
+  mask-image:radial-gradient(ellipse 85% 70% at 50% 20%,#000 25%,transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse 85% 70% at 50% 20%,#000 25%,transparent 75%);
+}
+.hero-top{position:relative;text-align:center;max-width:900px;margin-inline:auto}
+.hero h1{
+  font-size:clamp(3rem,9.5vw,7.2rem);font-weight:700;text-transform:none;
+  margin-bottom:1.5rem;
+}
+.hero h1 .line{display:block}
+.hero .sub{font-size:clamp(1.02rem,1.9vw,1.22rem);color:var(--muted);max-width:36em;margin:0 auto 2.3rem}
+.hero .sub strong{color:var(--text)}
+.hero .cta-row{display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
+
+/* floating consult card */
+.consult{
+  position:relative;margin:3.6rem auto 0;max-width:560px;
+  background:linear-gradient(165deg,var(--card),#0B120C);
+  border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:1.5rem 1.7rem;display:flex;align-items:center;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;
+  box-shadow:0 40px 90px -45px rgba(0,0,0,.9),inset 0 1px 0 rgba(199,228,95,.08);
+  animation:floaty 7s ease-in-out infinite;
+}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.consult .tag{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:600;margin-bottom:.2rem}
+.consult b{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;font-weight:600;display:block}
+.consult span{font-size:.85rem;color:var(--muted)}
+
+/* stats strip */
+.stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);
+  border-block:1px solid var(--line);margin-top:4.5rem;
+}
+.stat{background:var(--bg);padding:2.4rem 1.5rem;text-align:center}
+.stat b{display:block;font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,4.5vw,3.1rem);font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--muted);font-size:.9rem}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+
+/* status line */
+.status{
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;
+  padding:1.1rem 0;color:var(--muted);font-size:.88rem;
+}
+.status .op{display:inline-flex;align-items:center;gap:.5rem;color:var(--lime);font-weight:500}
+.status .op i{width:8px;height:8px;border-radius:50%;background:var(--green);font-style:normal;box-shadow:0 0 0 0 rgba(53,185,74,.6);animation:ping 2s infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(53,185,74,.55)}70%{box-shadow:0 0 0 10px rgba(53,185,74,0)}100%{box-shadow:0 0 0 0 rgba(53,185,74,0)}}
+
+/* ================= SHARED ================= */
+section{padding:6.5rem 0;position:relative}
+h2{font-size:clamp(2.1rem,5vw,3.6rem);font-weight:700;margin-bottom:1.1rem;letter-spacing:-.03em}
+.lede{color:var(--muted);font-size:1.05rem;max-width:46em}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;font-size:.76rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--lime);margin-bottom:1.1rem;
+}
+.eyebrow::before{content:"";width:24px;height:2px;background:var(--grad)}
+
+/* ================= BENTO (Why AutoSecure — "Day one" section) ================= */
+#why{background:var(--surface);border-block:1px solid var(--line)}
+.bento{display:grid;grid-template-columns:1.35fr 1fr;grid-template-rows:auto auto;gap:1.3rem;margin-top:3.2rem}
+.bcard{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:1.9rem;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),border-color .35s;
+}
+.bcard:hover{transform:translateY(-6px);border-color:rgba(199,228,95,.32)}
+.bcard .chip{
+  display:inline-block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--lime);border:1px solid var(--line);border-radius:999px;padding:.32rem .8rem;margin-bottom:1rem;font-weight:600;
+}
+.bcard h3{font-size:1.4rem;margin-bottom:.55rem}
+.bcard p{color:var(--muted);font-size:.94rem}
+.b-featured{grid-row:span 2;display:flex;flex-direction:column}
+.b-featured .map{margin-top:1.4rem;border-radius:var(--r-md);overflow:hidden;background:#0A100B;border:1px solid rgba(199,228,95,.1);flex:1;display:flex}
+.b-featured .map svg{width:100%;height:auto;align-self:center}
+.route{fill:none;stroke:url(#routegrad);stroke-width:3;stroke-linecap:round;stroke-dasharray:640;stroke-dashoffset:640;animation:draw 6s var(--ease) infinite}
+@keyframes draw{0%{stroke-dashoffset:640}55%,100%{stroke-dashoffset:0}}
+.roads{stroke:rgba(150,162,150,.16);stroke-width:1.4;fill:none}
+.car{offset-path:path("M40 190 C 110 175, 130 120, 205 118 S 330 84, 400 62");animation:ride 6s var(--ease) infinite}
+@keyframes ride{0%{offset-distance:0%;opacity:0}8%{opacity:1}55%{offset-distance:100%}100%{offset-distance:100%}}
+.pin-pulse{transform-origin:400px 62px;animation:pinpulse 2s ease-out infinite}
+@keyframes pinpulse{0%{transform:scale(.4);opacity:.85}100%{transform:scale(2.1);opacity:0}}
+.radar{transform-origin:400px 62px;animation:sweep 4.2s linear infinite;opacity:.5}
+@keyframes sweep{to{transform:rotate(360deg)}}
+.b-mini{display:grid;gap:1.3rem}
+@media(max-width:900px){.bento{grid-template-columns:1fr}.b-featured{grid-row:auto}}
+
+/* ================= SERVICES (numbered S-01 grid) ================= */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:3.2rem}
+.svc{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);
+  padding:2rem 1.8rem;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),border-color .35s,box-shadow .35s;
+}
+.svc::before{
+  content:"";position:absolute;inset:0;opacity:0;transition:opacity .35s;pointer-events:none;
+  background:radial-gradient(380px circle at var(--mx,50%) var(--my,0%),rgba(199,228,95,.08),transparent 65%);
+}
+.svc:hover{transform:translateY(-6px);border-color:rgba(199,228,95,.3);box-shadow:0 26px 55px -30px rgba(0,0,0,.85)}
+.svc:hover::before{opacity:1}
+.svc .code{
+  font-family:'Space Grotesk',sans-serif;font-size:.8rem;letter-spacing:.16em;
+  color:var(--faint);display:block;margin-bottom:1.5rem;
+}
+.svc h3{font-size:1.28rem;margin-bottom:.5rem}
+.svc p{color:var(--muted);font-size:.92rem}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.svc-grid{grid-template-columns:1fr}}
+
+/* ================= TESTIMONIALS (pull-quote + wall) ================= */
+#reviews{background:var(--surface);border-block:1px solid var(--line)}
+.pullquote{
+  max-width:880px;margin:3rem auto 0;text-align:center;
+}
+.pullquote blockquote p{
+  font-family:'Space Grotesk',sans-serif;font-size:clamp(1.4rem,3.2vw,2.15rem);
+  font-weight:500;line-height:1.3;letter-spacing:-.015em;
+}
+.pullquote blockquote p::before{content:"\201C";color:var(--lime)}
+.pullquote blockquote p::after{content:"\201D";color:var(--lime)}
+.pullquote .who{display:flex;align-items:center;justify-content:center;gap:.9rem;margin-top:1.8rem}
+.ava{
+  width:52px;height:52px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem;color:#04120a;
+  background:var(--grad);
+}
+.who cite{font-style:normal;text-align:left}
+.who cite b{display:block;font-size:.95rem}
+.who cite span{font-size:.8rem;color:var(--muted)}
+.quote-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:3.5rem}
+.qcard{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-md);padding:1.5rem;
+  transition:transform .3s var(--ease),border-color .3s;
+}
+.qcard:hover{transform:translateY(-5px);border-color:rgba(199,228,95,.3)}
+.qcard p{font-size:.9rem;color:#C5CFC3;margin-bottom:1.2rem}
+.qcard .who{display:flex;align-items:center;gap:.7rem}
+.qcard .ava{width:40px;height:40px;font-size:.85rem}
+@media(max-width:960px){.quote-wall{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.quote-wall{grid-template-columns:1fr}}
+
+/* ================= PRICING (Targo plan cards) ================= */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem;margin-top:3.2rem;align-items:stretch}
+.plan{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);
+  padding:2.2rem 2rem;display:flex;flex-direction:column;position:relative;overflow:hidden;
+  transition:transform .35s var(--ease),border-color .35s,box-shadow .35s;
+}
+.plan:hover{transform:translateY(-7px);border-color:rgba(199,228,95,.32)}
+.plan .kicker{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);font-weight:600}
+.plan h3{font-size:1.5rem;margin:.3rem 0 1.2rem}
+.plan .from{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--faint)}
+.plan .price{font-family:'Space Grotesk',sans-serif;font-size:2.5rem;font-weight:700;margin-bottom:.9rem}
+.plan .price small{font-family:'Inter',sans-serif;font-size:.8rem;color:var(--muted);font-weight:500}
+.plan .desc{color:var(--muted);font-size:.92rem;margin-bottom:1.3rem}
+.plan ul{list-style:none;margin-bottom:1.8rem;flex:1}
+.plan li{padding:.4rem 0 .4rem 1.7rem;position:relative;font-size:.92rem;color:#C5CFC3}
+.plan li::before{content:"✓";position:absolute;left:0;color:var(--lime);font-weight:700;font-size:.85rem}
+.plan-featured{
+  background:linear-gradient(170deg,#15220F,#0E1A10 55%,#0B120C);
+  border-color:rgba(199,228,95,.4);
+  box-shadow:0 0 0 1px rgba(199,228,95,.12),0 34px 70px -30px rgba(53,185,74,.35);
+}
+.plan-featured .flag{
+  position:absolute;top:1.1rem;right:-2.4rem;transform:rotate(38deg);
+  background:var(--grad);color:#04120a;font-weight:700;font-size:.7rem;letter-spacing:.1em;padding:.38rem 3rem;
+}
+.plan-featured .price{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+@media(max-width:940px){.plans{grid-template-columns:1fr;max-width:520px;margin-inline:auto}}
+
+/* ================= MARQUEE + CLOSING CTA ================= */
+.marquee{border-block:1px solid var(--line);background:var(--surface);overflow:hidden;padding:1rem 0}
+.marquee-track{display:flex;gap:3.5rem;width:max-content;animation:marquee 28s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{white-space:nowrap;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.marquee b{color:var(--lime)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+#cta{padding:7rem 0}
+.cta-banner{
+  position:relative;background:var(--grad);border-radius:32px;overflow:hidden;
+  padding:clamp(3rem,7vw,5.5rem) clamp(1.8rem,5vw,4.5rem);color:#04120a;
+  display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center;
+}
+.cta-banner::before{
+  content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+  background-image:linear-gradient(rgba(4,18,10,.6) 1px,transparent 1px),linear-gradient(90deg,rgba(4,18,10,.6) 1px,transparent 1px);
+  background-size:44px 44px;
+}
+.cta-banner h2{color:#04120a;font-size:clamp(2.3rem,5.5vw,4.2rem);margin-bottom:1rem}
+.cta-banner p{font-weight:500;max-width:30em;margin-bottom:2rem;color:rgba(4,18,10,.8)}
+.cta-banner .btns{display:flex;gap:.9rem;flex-wrap:wrap}
+/* compact form inside CTA */
+.cta-form{
+  position:relative;background:rgba(4,18,10,.92);border-radius:var(--r-lg);padding:1.9rem 1.7rem;
+  box-shadow:0 30px 70px -30px rgba(4,18,10,.6);
+}
+.cta-form .field{margin-bottom:.9rem}
+.cta-form label{display:block;font-weight:600;font-size:.8rem;margin-bottom:.3rem;color:#DCE4DA}
+.cta-form input,.cta-form select{
+  width:100%;padding:.8rem .95rem;border:1px solid rgba(199,228,95,.2);border-radius:10px;
+  font:inherit;font-size:.95rem;background:#0B110C;color:var(--text);min-height:50px;
+  transition:border-color .25s,box-shadow .25s;
+}
+.cta-form input::placeholder{color:#5E6A5E}
+.cta-form input:focus,.cta-form select:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(53,185,74,.2)}
+.cta-form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C7E45F' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 1rem center}
+.check{display:flex;gap:.6rem;align-items:flex-start;font-size:.76rem;color:var(--muted);margin:.9rem 0 1.1rem}
+.check input{width:auto;min-height:0;margin-top:.25rem;accent-color:var(--green)}
+.form-ok{display:none;background:rgba(53,185,74,.14);border:1px solid rgba(53,185,74,.5);color:#9FE6AC;border-radius:10px;padding:.85rem 1rem;font-size:.86rem;margin-bottom:1rem}
+.wa-btn{background:#1FAE54;color:#04120a}
+.wa-btn:hover{background:#27C462;transform:translateY(-2px)}
+@media(max-width:940px){.cta-banner{grid-template-columns:1fr}}
+
+/* ================= MEGA FOOTER ================= */
+footer{background:#050805;border-top:1px solid var(--line);padding:4rem 0 6.5rem;color:var(--muted);font-size:.9rem}
+.foot-cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:2.4rem}
+.foot-cols b{color:var(--text);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:1rem}
+.foot-cols ul{list-style:none;display:grid;gap:.55rem}
+footer a{text-decoration:none;transition:color .25s}
+footer a:hover{color:var(--lime)}
+.foot-brand p{margin-top:.9rem;max-width:26ch}
+.socials{display:flex;gap:.7rem;margin-top:1.1rem}
+.socials a{
+  width:44px;height:44px;border-radius:50%;display:grid;place-items:center;
+  background:var(--card);border:1px solid var(--line);font-size:1rem;
+  transition:transform .25s var(--ease),border-color .25s;
+}
+.socials a:hover{transform:translateY(-4px);border-color:var(--lime)}
+.foot-bottom{
+  display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  border-top:1px solid var(--line);margin-top:3rem;padding-top:1.6rem;font-size:.8rem;color:var(--faint);
+}
+@media(max-width:940px){.foot-cols{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.foot-cols{grid-template-columns:1fr}}
+
+/* ================= FLOATING CTA ================= */
+.float-call{
+  position:fixed;right:16px;bottom:16px;z-index:200;display:inline-flex;align-items:center;gap:.55rem;
+  text-decoration:none;background:var(--grad);color:#04120a;font-weight:700;font-size:.95rem;
+  min-height:56px;padding:0 1.4rem;border-radius:999px;
+  box-shadow:0 16px 40px -10px rgba(94,201,84,.7);transition:transform .25s var(--ease);
+}
+.float-call:hover{transform:translateY(-4px) scale(1.03)}
+.float-call .pulse{width:9px;height:9px;border-radius:50%;background:#04120a;animation:ping 1.8s infinite}
+@media(min-width:900px){.float-call{right:28px;bottom:28px}}
+
+/* ================= REVEAL ================= */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ MINIMAL NAV ============ -->
+<header>
+  <div class="wrap">
+    <nav aria-label="Main navigation">
+      <a class="logo" href="#top" aria-label="AutoSecure home">
+        <span class="mark" aria-hidden="true">◉</span>
+        AUTO<em>SECURE</em>
+      </a>
+      <a class="nav-cta" href="#cta">Contact Us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top" aria-label="Introduction">
+  <div class="gridbg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-top">
+      <h1>
+        <span class="line">Tracked. Protected.</span>
+        <span class="line gt">Recovered.</span>
+      </h1>
+      <p class="sub">AutoSecure installs professional-grade <strong>GPS tracking</strong> and <strong>anti-hijack systems</strong> for Trinidad &amp; Tobago — backed by real humans on a support line that never closes. Because a stolen vehicle can't wait until Monday morning.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#cta">Get Protected</a>
+        <a class="btn btn-outline" href="tel:+18685550123">Call 24/7 — (868) 555-0123</a>
+      </div>
+
+      <div class="consult reveal">
+        <div>
+          <p class="tag">Free 15-min consult</p>
+          <b>Not sure which system fits?</b>
+          <span>Talk it through with a technician — zero pressure.</span>
+        </div>
+        <a class="btn btn-primary" href="https://wa.me/18685550123" style="min-height:52px">Book a Call</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats" role="list" aria-label="Key statistics">
+    <div class="stat" role="listitem"><b data-count="95" data-suffix="%">0%</b><span>Recovery rate on tracked vehicles</span></div>
+    <div class="stat" role="listitem"><b data-count="24" data-suffix="/7">0/7</b><span>Human support — every hour, every day</span></div>
+    <div class="stat" role="listitem"><b data-count="3" data-prefix="&lt;" data-suffix="hr">0hr</b><span>Typical professional install</span></div>
+  </div>
+
+  <div class="wrap">
+    <div class="status">
+      <span>Vehicle, home &amp; business security — across Trinidad &amp; Tobago.</span>
+      <span class="op"><i aria-hidden="true"></i> All systems monitored</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY AUTOSECURE — BENTO ============ -->
+<section id="why" aria-label="Why AutoSecure">
+  <div class="wrap">
+    <p class="eyebrow reveal">Why AutoSecure</p>
+    <h2 class="reveal">Protection that answers.<br><span class="gt">Day one.</span></h2>
+    <p class="lede reveal">Any shop can bolt in a device. What you're actually buying is what happens at 2 a.m. when your vehicle moves without you — and that's where we're different.</p>
+
+    <div class="bento">
+      <div class="bcard b-featured reveal">
+        <div>
+          <span class="chip">Featured</span>
+          <h3>Live tracking, in your hand</h3>
+          <p>Real-time GPS on your phone, instant movement and tamper alerts, full trip history. No more wondering — knowing.</p>
+        </div>
+        <div class="map" aria-label="Live tracking demonstration" role="img">
+          <svg viewBox="0 0 440 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="routegrad" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0" stop-color="#35B94A"/><stop offset="1" stop-color="#C7E45F"/>
+              </linearGradient>
+              <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#C7E45F" stop-opacity=".5"/><stop offset="1" stop-color="#C7E45F" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <g class="roads">
+              <path d="M0 60 H440 M0 130 H440 M0 200 H440"/>
+              <path d="M90 0 V240 M180 0 V240 M270 0 V240 M360 0 V240"/>
+              <path d="M0 235 C 120 200, 200 210, 440 150"/>
+            </g>
+            <g class="radar"><path d="M400 62 L400 -30 A92 92 0 0 1 470 30 Z" fill="url(#glow)"/></g>
+            <path class="route" d="M40 190 C 110 175, 130 120, 205 118 S 330 84, 400 62"/>
+            <circle cx="40" cy="190" r="5" fill="#35B94A" opacity=".8"/>
+            <circle class="pin-pulse" cx="400" cy="62" r="14" fill="none" stroke="#C7E45F" stroke-width="2"/>
+            <circle cx="400" cy="62" r="7" fill="#C7E45F"/>
+            <circle cx="400" cy="62" r="3" fill="#070B08"/>
+            <g class="car"><circle r="7" fill="#F2F6EF"/><circle r="3.2" fill="#1E7A31"/></g>
+          </svg>
+        </div>
+      </div>
+      <div class="b-mini">
+        <div class="bcard reveal d1">
+          <h3>24/7 human support</h3>
+          <p>Call at 3 a.m., on a Sunday, on Carnival Monday — a real person on this island answers, walks you through recovery, and stays on the line with you and the police.</p>
+        </div>
+        <div class="bcard reveal d2">
+          <h3>Dual-layer defence</h3>
+          <p>Tracking tells you where it is. Anti-hijack immobilisation makes sure it doesn't get far. Together, thieves lose on both ends.</p>
+        </div>
+        <div class="bcard reveal d3">
+          <h3>One-time pricing. No subscriptions.</h3>
+          <p>The price we quote is the price you pay — professional install included. No monthly fees quietly draining your account.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES — NUMBERED GRID ============ -->
+<section id="services" aria-label="Services">
+  <div class="wrap">
+    <p class="eyebrow reveal">What We Secure</p>
+    <h2 class="reveal">Everything you drive,<br><span class="gt">live in, or work from.</span></h2>
+
+    <div class="svc-grid">
+      <article class="svc reveal"><span class="code">S-01</span>
+        <h3>GPS Tracking</h3>
+        <p>Concealed live tracking with movement, tow and tamper alerts — placement varied on every install so there's no standard spot to check.</p>
+      </article>
+      <article class="svc reveal d1"><span class="code">S-02</span>
+        <h3>Anti-Hijack Immobilisation</h3>
+        <p>A hidden switch only you can find. In a hold-up: comply, stay safe — the vehicle stops going anywhere without you.</p>
+      </article>
+      <article class="svc reveal d2"><span class="code">S-03</span>
+        <h3>Total Protection Bundle</h3>
+        <p>Both systems, one appointment, TT$300 saved. The setup we put on our own vehicles and recommend to family.</p>
+      </article>
+      <article class="svc reveal"><span class="code">S-04</span>
+        <h3>Fleet Monitoring</h3>
+        <p>Every van, truck and taxi in one dashboard — routes, stops and alerts across your whole operation.</p>
+      </article>
+      <article class="svc reveal d1"><span class="code">S-05</span>
+        <h3>Home Security</h3>
+        <p>Cameras and alarm systems installed and configured properly — with the same 24/7 support line behind them.</p>
+      </article>
+      <article class="svc reveal d2"><span class="code">S-06</span>
+        <h3>Business Security</h3>
+        <p>CCTV, access and monitored alarms for shops, offices and warehouses. Free site assessment included.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section id="reviews" aria-label="Customer stories">
+  <div class="wrap">
+    <p class="eyebrow reveal">Customer Stories</p>
+    <h2 class="reveal">The reviews we work for.</h2>
+
+    <div class="pullquote reveal">
+      <blockquote>
+        <p>They took my Hilux at 2 a.m. AutoSecure answered on the second ring, tracked it live, and by 6 a.m. police had it back. That one phone call was worth more than everything I paid.</p>
+      </blockquote>
+      <div class="who">
+        <span class="ava" aria-hidden="true">JR</span>
+        <cite><b>Jason R.</b><span>Diego Martin · GPS Tracking</span></cite>
+      </div>
+    </div>
+
+    <div class="quote-wall">
+      <div class="qcard reveal">
+        <p>“My daughter drives home from UWI at night. Since the anti-hijack went in, I sleep. Every parent should do this.”</p>
+        <div class="who"><span class="ava" aria-hidden="true">MS</span><cite><b>Mrs. Singh</b><span>Chaguanas</span></cite></div>
+      </div>
+      <div class="qcard reveal d1">
+        <p>“Three delivery vans on the bundle. Clean installs, one app for the whole fleet. They answered me on Boxing Day.”</p>
+        <div class="who"><span class="ava" aria-hidden="true">AM</span><cite><b>Andre M.</b><span>San Fernando</span></cite></div>
+      </div>
+      <div class="qcard reveal d2">
+        <p>“Transparent pricing — the number they quoted is exactly what I paid. No surprise monthly fees like the other guys.”</p>
+        <div class="who"><span class="ava" aria-hidden="true">KP</span><cite><b>Kevin P.</b><span>Arima</span></cite></div>
+      </div>
+      <div class="qcard reveal d3">
+        <p>“Had an app question at 11 p.m. and a real person sorted it in five minutes. That's what support is supposed to be.”</p>
+        <div class="who"><span class="ava" aria-hidden="true">NW</span><cite><b>Natasha W.</b><span>Couva</span></cite></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" aria-label="Plans and pricing">
+  <div class="wrap">
+    <p class="eyebrow reveal">Plans &amp; Pricing</p>
+    <h2 class="reveal">Priced by protection,<br><span class="gt">not by guesswork.</span></h2>
+    <p class="lede reveal">One-time investment, professionally installed, tested with you before you drive off — and covered by 24/7 support for the life of the system.</p>
+
+    <div class="plans">
+      <article class="plan reveal">
+        <span class="kicker">Plan</span>
+        <h3>GPS Tracking</h3>
+        <span class="from">One-time</span>
+        <p class="price">TT$1,500 <small>installed</small></p>
+        <p class="desc">Live location and instant alerts for a single vehicle.</p>
+        <ul>
+          <li>Real-time tracking on your phone</li>
+          <li>Movement, tow &amp; tamper alerts</li>
+          <li>Trip history &amp; route playback</li>
+          <li>Concealed professional install</li>
+        </ul>
+        <a class="btn btn-outline" href="#cta" data-service="GPS Tracking" style="width:100%">Start booking</a>
+      </article>
+
+      <article class="plan reveal d1">
+        <span class="kicker">Plan</span>
+        <h3>Anti-Hijack</h3>
+        <span class="from">One-time</span>
+        <p class="price">TT$1,000 <small>installed</small></p>
+        <p class="desc">Engine immobilisation with a switch only you can find.</p>
+        <ul>
+          <li>Hidden kill-switch, varied placement</li>
+          <li>Built for hold-up situations</li>
+          <li>Cars, SUVs, pickups &amp; vans</li>
+          <li>Zero monthly fees, ever</li>
+        </ul>
+        <a class="btn btn-outline" href="#cta" data-service="Anti-Hijack System" style="width:100%">Start booking</a>
+      </article>
+
+      <article class="plan plan-featured reveal d2">
+        <span class="flag">BEST VALUE</span>
+        <span class="kicker">Plan</span>
+        <h3>Total Protection</h3>
+        <span class="from">One-time · Save TT$300</span>
+        <p class="price">TT$2,200 <small>installed</small></p>
+        <p class="desc">Track it and stop it — dual-layer defence in one visit.</p>
+        <ul>
+          <li>Everything in GPS Tracking</li>
+          <li>Everything in Anti-Hijack</li>
+          <li>Priority scheduling &amp; support</li>
+          <li>Single professional installation</li>
+        </ul>
+        <a class="btn btn-primary" href="#cta" data-service="Total Protection Bundle" style="width:100%">Get the bundle</a>
+      </article>
+    </div>
+    <p class="reveal" style="margin-top:2rem;color:var(--muted);font-size:.9rem">Home, business or fleet? <a href="#cta" style="color:var(--lime)">Request a custom quote →</a></p>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>— Protection on standby</span><span><b>●</b> 24/7 human support</span><span>— Same-day installs</span><span><b>●</b> Island-wide coverage</span><span>— No monthly fees</span><span><b>●</b> Vehicles · Homes · Businesses</span>
+    <span>— Protection on standby</span><span><b>●</b> 24/7 human support</span><span>— Same-day installs</span><span><b>●</b> Island-wide coverage</span><span>— No monthly fees</span><span><b>●</b> Vehicles · Homes · Businesses</span>
+  </div>
+</div>
+
+<!-- ============ CLOSING CTA + FORM ============ -->
+<section id="cta" aria-label="Book your installation">
+  <div class="wrap">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Secure it.<br>With AutoSecure.</h2>
+        <p>Send your details and a member of our team — not a bot — calls you back within the hour. Prefer to talk now? The line never closes.</p>
+        <div class="btns">
+          <a class="btn btn-dark" href="tel:+18685550123">📞 Call 24/7</a>
+          <a class="btn btn-dark" href="https://wa.me/18685550123">WhatsApp Us</a>
+        </div>
+      </div>
+
+      <form id="bookform" novalidate class="cta-form">
+        <div class="form-ok" id="formok" role="status">✅ Request received — expect our call shortly. Want an instant reply? Tap "Send via WhatsApp".</div>
+        <div class="field">
+          <label for="f-name">Full name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required placeholder="e.g. Keisha Mohammed">
+        </div>
+        <div class="field">
+          <label for="f-phone">Phone</label>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" required placeholder="(868) 000-0000">
+        </div>
+        <div class="field">
+          <label for="f-vehicle">Vehicle model</label>
+          <input id="f-vehicle" name="vehicle" type="text" required placeholder="e.g. Toyota Aqua 2019">
+        </div>
+        <div class="field">
+          <label for="f-service">Service</label>
+          <select id="f-service" name="service" required>
+            <option value="">Select your protection…</option>
+            <option>GPS Tracking — TT$1,500</option>
+            <option>Anti-Hijack System — TT$1,000</option>
+            <option>Total Protection Bundle — TT$2,200 (Save TT$300)</option>
+            <option>Fleet / Home / Business — custom quote</option>
+          </select>
+        </div>
+        <label class="check">
+          <input type="checkbox" id="f-privacy" required>
+          <span>I agree that AutoSecure may contact me about my booking. My details are never shared or sold.</span>
+        </label>
+        <button class="btn btn-primary" type="submit" style="width:100%">Request My Booking</button>
+        <button class="btn wa-btn" type="button" id="wabtn" style="width:100%;margin-top:.7rem">Send via WhatsApp Instead</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ MEGA FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-brand">
+        <a class="logo" href="#top" aria-label="AutoSecure home">
+          <span class="mark" aria-hidden="true">◉</span>AUTO<em>SECURE</em>
+        </a>
+        <p>GPS tracking · Anti-hijack · Home &amp; business security, across Trinidad &amp; Tobago.</p>
+        <div class="socials">
+          <a href="#" aria-label="AutoSecure on Facebook">f</a>
+          <a href="#" aria-label="AutoSecure on Instagram">◎</a>
+          <a href="https://wa.me/18685550123" aria-label="AutoSecure on WhatsApp">✆</a>
+        </div>
+      </div>
+      <div>
+        <b>Services</b>
+        <ul>
+          <li><a href="#services">GPS tracking</a></li>
+          <li><a href="#services">Anti-hijack systems</a></li>
+          <li><a href="#services">Fleet monitoring</a></li>
+          <li><a href="#services">Home security</a></li>
+          <li><a href="#services">Business security</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>Company</b>
+        <ul>
+          <li><a href="#why">Why AutoSecure</a></li>
+          <li><a href="#reviews">Customer stories</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#cta">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>Resources</b>
+        <ul>
+          <li><a href="#cta">Book an install</a></li>
+          <li><a href="#cta">Free consultation</a></li>
+          <li><a href="#reviews">Recovery stories</a></li>
+          <li><a href="#cta">Fleet quotes</a></li>
+        </ul>
+      </div>
+      <div>
+        <b>Legal</b>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 AutoSecure. All rights reserved. Proudly serving Trinidad &amp; Tobago 🇹🇹</span>
+      <span>Support desk · 24/7 · <a href="tel:+18685550123">(868) 555-0123</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="float-call" href="tel:+18685550123" aria-label="Call AutoSecure now, available 24/7">
+  <span class="pulse" aria-hidden="true"></span> Call 24/7
+</a>
+
+<script>
+/* pre-select service from plan cards */
+document.querySelectorAll('[data-service]').forEach(function(a){
+  a.addEventListener('click',function(){
+    var sel=document.getElementById('f-service');
+    var want=a.getAttribute('data-service');
+    Array.prototype.forEach.call(sel.options,function(o){
+      if(o.text.indexOf(want)===0){sel.value=o.text;}
+    });
+  });
+});
+
+/* cursor-follow glow on service cards */
+document.querySelectorAll('.svc').forEach(function(card){
+  card.addEventListener('pointermove',function(e){
+    var r=card.getBoundingClientRect();
+    card.style.setProperty('--mx',(e.clientX-r.left)+'px');
+    card.style.setProperty('--my',(e.clientY-r.top)+'px');
+  });
+});
+
+/* scroll reveal */
+(function(){
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in')});return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
+    });
+  },{threshold:.12});
+  els.forEach(function(el){io.observe(el)});
+})();
+
+/* animated counters */
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nums=document.querySelectorAll('[data-count]');
+  function run(el){
+    var target=parseInt(el.getAttribute('data-count'),10);
+    var prefix=(el.getAttribute('data-prefix')||'').replace('&lt;','<');
+    var suffix=el.getAttribute('data-suffix')||'';
+    if(reduce){el.textContent=prefix+target+suffix;return;}
+    var start=null,dur=1400;
+    function frame(ts){
+      if(!start)start=ts;
+      var p=Math.min((ts-start)/dur,1);
+      var eased=1-Math.pow(1-p,3);
+      el.textContent=prefix+Math.round(eased*target)+suffix;
+      if(p<1)requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  if(!('IntersectionObserver' in window)){nums.forEach(run);return;}
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){run(e.target);io.unobserve(e.target);}
+    });
+  },{threshold:.5});
+  nums.forEach(function(el){io.observe(el)});
+})();
+
+/* booking form — static hosting, WhatsApp handoff */
+var WHATSAPP_NUMBER='18685550123'; /* replace with real number, digits only */
+
+function buildMessage(){
+  var f=document.getElementById('bookform');
+  return 'New AutoSecure booking request:%0A'
+    +'Name: '+encodeURIComponent(f.name.value||'-')+'%0A'
+    +'Phone: '+encodeURIComponent(f.phone.value||'-')+'%0A'
+    +'Vehicle: '+encodeURIComponent(f.vehicle.value||'-')+'%0A'
+    +'Service: '+encodeURIComponent(f.service.value||'-');
+}
+document.getElementById('bookform').addEventListener('submit',function(e){
+  e.preventDefault();
+  if(!this.checkValidity()){this.reportValidity();return;}
+  var ok=document.getElementById('formok');
+  ok.style.display='block';
+  ok.scrollIntoView({behavior:'smooth',block:'center'});
+});
+document.getElementById('wabtn').addEventListener('click',function(){
+  var f=document.getElementById('bookform');
+  if(!f.checkValidity()){f.reportValidity();return;}
+  window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+buildMessage(),'_blank','noopener');
+});
+</script>
+</body>
+</html>
